@@ -49,7 +49,7 @@ final class GatewayModelProviderTests: XCTestCase {
         XCTAssertEqual(template.createURL, "https://popnow.ai/api/console/keys")
         XCTAssertEqual(template.endpoints, [
             ProviderEndpoint("Media REST API", "https://api.popnow.ai/api/v1"),
-            ProviderEndpoint("Remote MCP (API key)", "https://api.popnow.ai/mcp"),
+            ProviderEndpoint("Remote MCP (API key)", "https://api.popnow.ai/api/v1/mcp"),
         ])
         XCTAssertEqual(template.sources, ["https://popnow.ai/docs/authentication", "https://popnow.ai/docs/mcp"])
         XCTAssertTrue(template.contractProblems.isEmpty)

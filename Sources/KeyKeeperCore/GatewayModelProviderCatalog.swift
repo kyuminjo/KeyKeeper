@@ -47,7 +47,7 @@ enum GatewayModelProviderCatalog {
         createURL: "https://popnow.ai/api/console/keys",
         endpoints: [
             .init("Media REST API", "https://api.popnow.ai/api/v1"),
-            .init("Remote MCP (API key)", "https://api.popnow.ai/mcp"),
+            .init("Remote MCP (API key)", "https://api.popnow.ai/api/v1/mcp"),
         ],
         gates: ["登录 PopNow 并打开 API keys 控制台", "为当前项目创建独立 API key，复制完整值后立即安全保存", "设置模型/IP 限制与消费上限，并确认独立 API 余额"],
         permission: "仅保存 PopNow 自身 API key，用于 REST 或 API-key MCP。按用途限制模型、IP 及日/月/累计消费；OAuth MCP 与 API key 使用不同余额，不能互换。",
